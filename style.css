@@ -1,0 +1,125 @@
+:root {
+  --blue: #37517e;
+}
+.text-blue {
+  color: var(--blue);
+}
+.bg-blue {
+  background-color: var(--blue);
+}
+.front {
+  background-color: var(--blue) !important;
+  /* color: white !important; */
+}
+.front-2 a {
+  color: white !important;
+}
+.dropdown-menu a {
+  color: black !important;
+}
+.front-img {
+  /* transform: translateY(-20px); */
+  transition: all 2s;
+  animation: asad alternate ease-in infinite;
+  /* animation-timing-function: 2; */
+  animation-duration: 2s;
+  /* animation-delay: inherit; */
+  /* animation-iteration-count: infinite; */
+}
+.max-content {
+  max-width: max-content;
+  margin: auto;
+}
+.gery {
+  width: 100%;
+  margin: auto;
+  height: 3px;
+  background-color: grey;
+  color: red;
+  position: relative;
+}
+.blue {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+
+  height: 6px;
+  color: green;
+  background-color: var(--bs-info);
+}
+.ser-hover {
+  transition: all 0.5s;
+}
+.ser-hover h4 {
+  transition: all 0.5s;
+}
+.ser-hover h4:hover {
+  color: var(--bs-info);
+}
+.ser-hover:hover {
+  transform: translateY(-20px);
+}
+@keyframes asad {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+.bg-img {
+  background: linear-gradient(rgba(55, 81, 126, 0.5), rgba(55, 81, 126, 0.8)),
+    url("https://bootstrapmade.com/content/demo/Arsha/assets/img/cta-bg.jpg")
+      fixed;
+}
+.img-parent {
+  overflow: hidden;
+}
+.img-child {
+  transform: translateY(80px);
+  bottom: 0;
+  transition: all 0.3s;
+}
+.img-parent:hover .img-child {
+  transform: translate(0);
+}
+.clip-circle {
+  clip-path: circle();
+}
+.cards {
+  transition: all 0.5s;
+}
+.cards:hover {
+  transform: translateY(-15px);
+}
+.img-vh {
+  object-fit: cover !important;
+}
+.carousel-item img {
+  object-fit: cover;
+  height: 50vh;
+}
+@media (max-width: 770px) {
+  .images {
+    width: 40%;
+    margin: auto !important;
+    display: block !important;
+  }
+  .heri {
+    margin: auto !important;
+  }
+  .media {
+    text-align: center !important;
+  }
+  .d-media {
+    /* margin: auto !important; */
+    text-align: center !important;
+    justify-content: center;
+  }
+  .cards {
+    text-align: center !important;
+  }
+}
